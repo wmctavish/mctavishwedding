@@ -1,0 +1,65 @@
+
+.rsvp {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: 'EB Garamond', serif;
+    color: white;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 50%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0px black;
+}
+
+.attending h1 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.attending p {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.guestInfo {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+label {
+    font-size: 25px;
+    display: block;
+    padding: 10px;
+}
+
+input[type=text], select {
+    height: 30px;
+    width: 30%;
+    border: 0px solid;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+select {
+    transition: all .5s ease-in;
+}
+
+
+button {
+    font-family: 'EB Garamond', serif;
+    font-size: 25px;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px black;
+    transition: all .35s ease-in-out;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all .35s ease-in-out;
+}
+

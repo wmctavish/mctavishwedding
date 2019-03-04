@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RSVP</title>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Qwigley" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/rsvp.css">
+</head>
+<body>
+
+<div class="flex-page">
+
+
+    <div class="navBar" id="navBar">
+        <a id="home" href="home.html">HOME</a>
+        <a id="details" href="details.html">INFO</a>
+        <a id="menu" href="menu.html">MENU</a>
+        <a id="photos" href="photos.html">PHOTOS</a>
+        <a id="rsvp" href="rsvp.html">RSVP</a>
+    </div>
+
+    <div type="container" class="rsvp" id="rsvpform">
+        <div class="attending">
+          <h1>RSVP</h1>
+          <p>I will be...</p>
+          <input type="radio" name="attend" id="yes" value="yes" onClick="document.getElementById('meal1').disabled=false, document.getElementById('meal2').disabled=false;" checked="checked">Attending<br>
+          <input type="radio" name="attend" id="no" value="no" onClick="document.getElementById('meal1').disabled=true, document.getElementById('meal2').disabled=true;">Regretfully unable to attend<br>
+        </div>
+        <hr>
+        <div class="guestInfo">
+            <label for="name1" id="nameone">Name: <input autocomplete="off" id="name1" type="text" placeholder="Full Name..."></label>
+            <label for="meal1" id="mealSelection1">Meal:
+                <select id="meal1" autocomplete="off">
+                    <option value="Steak">Steak</option>
+                    <option value="Chicken">Chicken</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                </select>
+            </label>
+            <hr>
+            <p>Guest<p>
+            <label for="name2" id="nametwo">Name: <input autocomplete="off" id="name2" type="text" placeholder="Full Name..."></label>
+            <label for="meal2" id="mealSelection2">Meal:
+                <select id="meal2" autocomplete="off">
+                    <option value="none">-</option>
+                    <option value="Steak">Steak</option>
+                    <option value="Chicken">Chicken</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                </select>
+            </label>
+            <hr>
+            <button id="submit">Submit</button>
+         </div>
+        <script src="javascript/rsvp.js"></script>
+    </div>
+
+</div>
+<script src="javascript/pwcheck.js"></script>
+</body>
+</html>

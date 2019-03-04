@@ -1,0 +1,46 @@
+.title {
+    font-family: 'Qwigley', cursive;
+    color: black;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.scrollContainer {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    margin: 10px;
+    min-height: 0;
+}
+
+.menu-contents {
+    flex-grow: 1;
+    overflow: auto;
+    min-height: 0;
+    box-shadow: 0 0 20px 0px black;
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.menu-contents img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.menu-headings {
+    font-family: 'Qwigley', cursive;
+    font-size: 35px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.meal-details {
+    list-style-type: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    padding-bottom: 40px;
+}
