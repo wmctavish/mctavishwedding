@@ -9,11 +9,14 @@
 }
 
 .col-md-4 {
+    width: 300px;
+    height: 200px;
     margin: 10px;
 }
 
 .col-md-4 img{
-    width: 300px;
+    width: 100% !important;
+    height: 100% !important;
     margin: 1px;
     filter: grayscale(100%);
     transition: 1s;
