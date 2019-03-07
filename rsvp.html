@@ -27,8 +27,14 @@
         <div class="attending">
           <h1>RSVP</h1>
           <p>I will be...</p>
-          <input type="radio" name="attend" id="yes" value="yes" onClick="document.getElementById('meal1').disabled=false, document.getElementById('meal2').disabled=false;" checked="checked">Attending<br>
-          <input type="radio" name="attend" id="no" value="no" onClick="document.getElementById('meal1').disabled=true, document.getElementById('meal2').disabled=true;">Regretfully unable to attend<br>
+          <div id="container">
+            <label for="yes">Attending</label>
+            <input type="radio" name="attend" id="yes" value="yes" onClick="document.getElementById('meal1').disabled=false, document.getElementById('meal2').disabled=false;" checked="checked"><br>
+          </div>
+            <div id="container">
+            <label for="yes">Regretfully unable to attend</label>
+            <input type="radio" name="attend" id="no" value="no" onClick="document.getElementById('meal1').disabled=true, document.getElementById('meal2').disabled=true;">
+          </div>
         </div>
         <hr>
         <div class="guestInfo">
