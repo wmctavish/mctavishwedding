@@ -24,46 +24,50 @@
     </div>
 
     <div type="container" class="rsvp" id="rsvpform">
-        <div class="attending">
-          <h1>RSVP</h1>
-          <p>I will be...</p>
-          <div id="container">
-            <label for="yes">Attending</label>
-            <input type="radio" name="attend" id="yes" value="yes" onClick="document.getElementById('meal1').disabled=false, document.getElementById('meal2').disabled=false;" checked="checked"><br>
-          </div>
+        <form action="https://formspree.io/wmmctavish2019@gmail.com" method="POST">
+            <div class="attending">
+            <h1>RSVP</h1>
+            <p>I will be...</p>
             <div id="container">
-            <label for="yes">Regretfully unable to attend</label>
-            <input type="radio" name="attend" id="no" value="no" onClick="document.getElementById('meal1').disabled=true, document.getElementById('meal2').disabled=true;">
-          </div>
-        </div>
-        <hr>
-        <div class="guestInfo">
-            <label for="name1" id="nameone">Name: <input autocomplete="off" id="name1" type="text" placeholder="Full Name..."></label>
-            <label for="meal1" id="mealSelection1">Meal:
-                <select id="meal1" autocomplete="off">
-                    <option value="Steak">Steak</option>
-                    <option value="Chicken">Chicken</option>
-                    <option value="Vegetarian">Eggplant Parmigiana</option>
-                </select>
-            </label>
+                <label for="yes">Attending</label>
+                <input type="radio" name="attend" id="yes" value="yes" onClick="document.getElementById('meal1').disabled=false, document.getElementById('meal2').disabled=false;" checked="checked"><br>
+            </div>
+                <div id="container">
+                <label for="yes">Regretfully unable to attend</label>
+                <input type="radio" name="attend" id="no" value="no" onClick="document.getElementById('meal1').disabled=true, document.getElementById('meal2').disabled=true;">
+            </div>
+            </div>
             <hr>
-            <p>Guest<p>
-            <label for="name2" id="nametwo">Name: <input autocomplete="off" id="name2" type="text" placeholder="Full Name..."></label>
-            <label for="meal2" id="mealSelection2">Meal:
-                <select id="meal2" autocomplete="off">
-                    <option value="none">-</option>
-                    <option value="Steak">Steak</option>
-                    <option value="Chicken">Chicken</option>
-                    <option value="Vegetarian">Eggplant Parmigiana</option>
-                </select>
-            </label>
-            <hr>
-            <button id="submit">Submit</button>
-         </div>
-        <script src="javascript/rsvp.js"></script>
+            <div class="guestInfo">
+                <label for="name1" id="nameone">Name: <input autocomplete="off" id="name1" name="name1" type="text" placeholder="Full Name..."></label>
+                <label for="meal1" id="mealSelection1">Meal:
+                    <select id="meal1" name="meal1" autocomplete="off">
+                        <option value="Steak">Steak</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Vegetarian">Eggplant Parmigiana</option>
+                    </select>
+                </label>
+                <hr>
+                <p>Guest<p>
+                <label for="name2" id="nametwo">Name: <input autocomplete="off" id="name2" name="name2" type="text" placeholder="Full Name..."></label>
+                <label for="meal2" id="mealSelection2">Meal:
+                    <select id="meal2" name="meal2" autocomplete="off">
+                        <option value="none">-</option>
+                        <option value="Steak">Steak</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Vegetarian">Eggplant Parmigiana</option>
+                    </select>
+                </label>
+                <hr>
+                <p>For other questions or concerns, please contact us at wmmctavish2019@gmail.com</p>
+                <button id="submit">Submit</button>
+            </div>
+        
+        </form>
     </div>
 
 </div>
+<script src="javascript/rsvp.js"></script>
 <script src="javascript/pwcheck.js"></script>
 </body>
 </html>
