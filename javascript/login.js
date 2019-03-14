@@ -13,5 +13,17 @@ submitButton.addEventListener("click", () => {
         sessionStorage.setItem(password, pwattempt);
         window.location.replace("home.html");
     }
-})
+});
+
+usrinput.addEventListener("keyup", (event) => {
+    let pwattempt = usrinput.value;
+    if (event.keyCode === 13) {
+        if (pwattempt != pw) {
+            alert("Incorrect Password")
+        } else {
+            sessionStorage.setItem(password, pwattempt);
+            window.location.replace("home.html");
+        }
+    }
+});
 
