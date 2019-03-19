@@ -2,7 +2,7 @@ const usrinput = document.getElementById("pwinput");
 const submitButton = document.getElementById("submit");
 
 const password = "Password";
-const pw = "WM2019wedding";
+const pw = "WM2019";
 
 submitButton.addEventListener("click", () => {
     let pwattempt = usrinput.value;

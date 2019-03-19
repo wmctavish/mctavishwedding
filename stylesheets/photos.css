@@ -14,6 +14,12 @@
     margin: 10px;
 }
 
+.col-md-5 {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+}
+
 .col-md-4 img{
     width: 100% !important;
     height: 100% !important;
@@ -22,7 +28,20 @@
     transition: 1s;
 }
 
+.col-md-5 img{
+    width: 100% !important;
+    height: 100% !important;
+    margin: 1px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
 .col-md-4 img:hover{
+    width: 310px;
+    filter: grayscale(0);
+}
+
+.col-md-5 img:hover{
     width: 310px;
     filter: grayscale(0);
 }
